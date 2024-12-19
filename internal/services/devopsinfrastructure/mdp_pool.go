@@ -1,4 +1,4 @@
-package mdp
+package devopsinfrastructure
 
 import (
 	"context"
@@ -690,8 +690,8 @@ func expandOsProfileSchemaToOsProfile(input *OSProfileSchema) *pools.OsProfile {
 	return output
 }
 
-func expandSkuSchemaToSku(input SkuSchema) pools.Sku {
-	output := pools.Sku{
+func expandSkuSchemaToSku(input SkuSchema) pools.DevOpsAzureSku {
+	output := pools.DevOpsAzureSku{
 		Name: input.Name,
 	}
 
